@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Grant Loyihalar</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="./assets/img/bsmi_logo_circle_only.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header d-flex align-items-center sticky-top">
+  <div class="container position-relative d-flex align-items-center justify-content-between flex-wrap">
+  <img src="./assets/img/bsmi_logo_circle_only.png" alt="" class="logo-img" loading="lazy">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active"><span data-txt="navHome">Bosh sahifa</span><br></a></li>
+          <li><a href="#news"><span data-txt="navNews">Yangiliklar</span></a></li>
+          <li><a href="#Selections"><span data-txt="navMenu">Tanlovlar</span></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <!-- url kirish kerak djanodan  -->
+  <div class="d-flex align-items-center">
+      <a href="index.html" class="btn btn-primary active"><span data-txt="navLogin">Kirish</span></a>
+  <div class="lang-switcher d-inline-flex align-items-center">
+  <button class="lang-select btn btn-sm btn-light border me-1 px-2 py-1 d-none d-sm-inline" data-lang="uz" id="lang-uz">UZ</button>
+  <button class="lang-select btn btn-sm btn-light border px-2 py-1 d-none d-sm-inline" data-lang="ru" id="lang-ru">RU</button>
+  <select id="lang-mobile" class="form-select form-select-sm d-inline d-sm-none">
+          <option value="uz">UZ</option>
+          <option value="ru">RU</option>
+        </select>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section light-background">
+      <div class="container">
+        <!-- Modal for card details -->
+        <div class="modal fade" id="cardDetailModal" tabindex="-1" aria-labelledby="cardDetailModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="cardDetailModalLabel">Yangilik tafsilotlari</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" id="cardDetailModalBody">
+                <!-- Card info will be injected here -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row gy-4 justify-content-center justify-content-lg-between">
+          <div  class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start">
+            <h1 class="hero-title"><h3 data-txt="heroTitle"="heroTitle">Hujjat kiritish uchun kirish qiling</h3></h1>
+            <div class="Documents-btn">
+              <input type="file" id="hero-file" class="hero-file-input" />
+              <button id="file-remove-btn" type="button" title="Faylni o'chirish">&times;</button>
+              <span class="folderContainer">
+                <svg class="fileBack" width="146" height="113" viewBox="0 0 146 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 4C0 1.79086 1.79086 0 4 0H50.3802C51.8285 0 53.2056 0.627965 54.1553 1.72142L64.3303 13.4371C65.2799 14.5306 66.657 15.1585 68.1053 15.1585H141.509C143.718 15.1585 145.509 16.9494 145.509 19.1585V109C145.509 111.209 143.718 113 141.509 113H3.99999C1.79085 113 0 111.209 0 109V4Z" fill="url(#paint0_linear_117_4)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_117_4" x1="0" y1="0" x2="72.93" y2="95.4804" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#8F88C2"></stop>
+                      <stop offset="1" stop-color="#5C52A2"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg class="filePage" width="88" height="99" viewBox="0 0 88 99" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="88" height="99" fill="url(#paint0_linear_117_6)"></rect>
+                  <defs>
+                    <linearGradient id="paint0_linear_117_6" x1="0" y1="0" x2="81" y2="160.5" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white"></stop>
+                      <stop offset="1" stop-color="#686868"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <svg class="fileFront" width="160" height="79" viewBox="0 0 160 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.29306 12.2478C0.133905 9.38186 2.41499 6.97059 5.28537 6.97059H30.419H58.1902C59.5751 6.97059 60.9288 6.55982 62.0802 5.79025L68.977 1.18034C70.1283 0.410771 71.482 0 72.8669 0H77H155.462C157.87 0 159.733 2.1129 159.43 4.50232L150.443 75.5023C150.19 77.5013 148.489 79 146.474 79H7.78403C5.66106 79 3.9079 77.3415 3.79019 75.2218L0.29306 12.2478Z" fill="url(#paint0_linear_117_5)"></path>
+                  <defs>
+                    <linearGradient id="paint0_linear_117_5" x1="38.7619" y1="8.71323" x2="66.9106" y2="82.8317" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#C3BBFF"></stop>
+                      <stop offset="1" stop-color="#51469A"></stop>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </span>
+              <span class="text" data-txt="heroUpload">Hujjatni yuklang</span>
+            </div>
+            <!-- From Uiverse.io by alexmaracinaru -->
+            <!-- From Uiverse.io by zjssun -->
+            <button id="upload-btn" class="button" data-txt="butyuborish" >Hujjatni uzatish</button>
+            <div class="d-flex w-100 justify-content-center justify-content-lg-start" data-aos="fade-up" data-aos-delay="200">
+              <!-- Qo'shimcha kontent -->
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 hero-img d-flex justify-content-center align-items-center" data-aos="zoom-out">
+            <img src="assets/img/ChatGPT Image Aug 31, 2025, 01_04_40 PM.png" class="img-fluid animated hero-main-img" alt="" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="news" class="about section">
+      <div class="container section-title" data-aos="fade-up">
+  <h2><span data-txt="aboutTitle">Yangiliklar</span></h2>
+  <p><span data-txt="aboutSubtitle">So'ngi yangiliklar</span></p>
+      </div>
+      <div class="container">
+        <div class="swiper about-swiper">
+          <div class="swiper-wrapper" id="news-cards-wrapper">
+            <!-- News cards will be rendered here dynamically from backend -->
+            <div class="swiper-slide">
+              <div class="card news-card h-100 p-2">
+                <img src="assets/img/about.jpg" class="card-img-top" alt="Yangilik 1" loading="lazy">
+                <div class="card-body p-2">
+                  <h6 class="card-title mb-1 card-title-full">Yangilik sarlavhasi 1</h6>
+                  <p class="card-text mb-0 card-preview">Lorem ipsum dolor sit amet...</p>
+                  <p class="card-text mb-0 card-full">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur cursus, nisl erat dictum erat, nec dictum erat nisl eu erat.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card news-card h-100 p-2">
+                <img src="assets/img/about-2.jpg" class="card-img-top" alt="Yangilik 2" loading="lazy">
+                <div class="card-body p-2">
+                  <h6 class="card-title mb-1 card-title-full">Yangilik sarlavhasi 2</h6>
+                  <p class="card-text mb-0 card-preview">Ullamco laboris nisi ut aliquip...</p>
+                  <p class="card-text mb-0 card-full">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card news-card h-100 p-2">
+                <img src="assets/img/events-1.jpg" class="card-img-top" alt="Yangilik 3" loading="lazy">
+                <div class="card-body p-2">
+                  <h6 class="card-title mb-1 card-title-full">Yangilik sarlavhasi 3</h6>
+                  <p class="card-text mb-0 card-preview">Excepteur sint occaecat...</p>
+                  <p class="card-text mb-0 card-full">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card news-card h-100 p-2">
+                <img src="assets/img/events-2.jpg" class="card-img-top" alt="Yangilik 4" loading="lazy">
+                <div class="card-body p-2">
+                  <h6 class="card-title mb-1 card-title-full">Yangilik sarlavhasi 4</h6>
+                  <p class="card-text mb-0 card-preview">Sunt in culpa qui officia...</p>
+                  <p class="card-text mb-0 card-full">Sunt in culpa qui officia deserunt mollit anim id est laborum. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card news-card h-100 p-2">
+                <img src="assets/img/events-3.jpg" class="card-img-top" alt="Yangilik 5" loading="lazy">
+                <div class="card-body p-2">
+                  <h6 class="card-title mb-1 card-title-full">Yangilik sarlavhasi 5</h6>
+                  <p class="card-text mb-0 card-preview">Quis autem vel eum iure...</p>
+                  <p class="card-text mb-0 card-full">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Menu Section -->
+    <section id="Selections" class="menu section">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2><span data-txt="menuTitle">Tanlovlar</span></h2>
+          <p><span class="description-title" data-txt="menuSubtitle" style="color: black;">Yangi tanlovlar ro'yxati</span></p>
+        </div>
+        <div class="row gy-4" id="selections-list">
+          <!-- Har qatorda maksimal 4 ta card, 5-chi pastki qatordan chiqadi -->
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/menu/menu-item-1.png" class="card-img-top" alt="Tanlov rasmi" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tanlov nomi 1</h5>
+                <p class="card-text">Tanlov haqida qisqacha ma'lumot.</p>
+                <a href="#" class="btn btn-primary mt-auto">Batafsil</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/menu/menu-item-2.png" class="card-img-top" alt="Tanlov rasmi" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tanlov nomi 2</h5>
+                <p class="card-text">Qisqacha izoh yoki tavsif.</p>
+                <a href="#" class="btn btn-primary mt-auto" data-txt="cardMore">Batafsil</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/menu/menu-item-3.png" class="card-img-top" alt="Tanlov rasmi" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tanlov nomi 3</h5>
+                <p class="card-text">Qisqacha izoh yoki tavsif.</p>
+                <a href="#" class="btn btn-primary mt-auto">Batafsil</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/menu/menu-item-4.png" class="card-img-top" alt="Tanlov rasmi" loading="lazy">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Tanlov nomi 4</h5>
+                <p class="card-text">Qisqacha izoh yoki tavsif.</p>
+                <a href="#" class="btn btn-primary mt-auto">Batafsil</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- /Menu Section -->
+
+
+   
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="container" >
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4 data-txt="footerContactTitle">Contact</h4>
+            <p>
+              <strong data-txt="footerPhone" >Phone:</strong> <span data-txt="footerPhoneNumber" style="color: #fff !important;">+1 5589 55488 55</span><br>
+              <strong data-txt="footerTelegram">Telegram:</strong> <span data-txt="footerTelegramUser" style="color: #fff !important;">@grantloyiha</span><br>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/lang.js"></script>
+
+</body>
+
+</html>
