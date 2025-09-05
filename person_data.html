@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma'lumotlarim</title>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-around flex-wrap">
+      <img src="./assets/img/bsmi_logo_circle_only.png" alt="" class="logo-img d-none d-md-block" loading="lazy">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#home" class="active"><span data-txt="navHome">Bosh sahifa</span><br></a></li>
+          <li><a href="index.html#aplication" data-txt="apliCation" style="color: black;">Arizlarim</a></li>
+          <li><a href="index.html#news"><span data-txt="navNews">Yangiliklar</span></a></li>
+          <li><a href="index.html#Selections"><span data-txt="navMenu">Tanlovlar</span></a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="d-flex align-items-center">
+        <div class="dropdown">
+          <img src="assets/img/bsmi_logo_circle_only.png" alt="Profil" class="rounded-circle" style="width:40px; height:40px; object-fit:cover; cursor:pointer;" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href="message.html"><i class="bi bi-envelope"></i> Xabarlar</a></li>
+            <li><a class="dropdown-item" href="person_data.html"><i class="bi bi-person"></i> Ma'lumotlarim</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#logout"><i class="bi bi-box-arrow-right"></i> Log out</a></li>
+          </ul>
+        </div>
+        <div class="lang-switcher d-inline-flex align-items-center">
+          <button class="lang-select btn btn-sm btn-light border me-1 px-2 py-1 d-none d-sm-inline" data-lang="uz" id="lang-uz">UZ</button>
+          <button class="lang-select btn btn-sm btn-light border px-2 py-1 d-none d-sm-inline" data-lang="ru" id="lang-ru">RU</button>
+          <select id="lang-mobile" class="form-select form-select-sm d-inline d-sm-none">
+            <option value="uz">UZ</option>
+            <option value="ru">RU</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="assets/img/profile.jpg" alt="Profil" class="profile-avatar">
+      <div class="profile-info">
+        <h4>Ism Familiya</h4>
+        <div class="email"><i class="bi bi-envelope"></i> user@email.com</div>
+        <span class="badge bg-success">Faol</span>
+      </div>
+    </div>
+    <dl class="profile-details row">
+      <dt class="col-sm-4">Telefon</dt>
+      <dd class="col-sm-8">+998 90 123 45 67</dd>
+      <dt class="col-sm-4">Tug'ilgan sana</dt>
+      <dd class="col-sm-8">2000-01-01</dd>
+      <dt class="col-sm-4">O'qish</dt>
+      <dd class="col-sm-8">Toshkent Axborot Texnologiyalari Universiteti, 3-kurs</dd>
+      <dt class="col-sm-4">Manzil</dt>
+      <dd class="col-sm-8">Toshkent, Yunusobod tumani</dd>
+      <dt class="col-sm-4">Passport</dt>
+      <dd class="col-sm-8">AB1234567</dd>
+      <dt class="col-sm-4">Jins</dt>
+      <dd class="col-sm-8">Erkak</dd>
+    </dl>
+  </div>
+
+
+  
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/lang.js"></script>
+  <script src="./assets/js/profil.js"></script>
+</body>
+</html>
